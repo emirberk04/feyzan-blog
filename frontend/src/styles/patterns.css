@@ -1,0 +1,53 @@
+/* Background Patterns */
+.pattern-grid {
+  background-image: 
+    linear-gradient(45deg, rgba(255, 137, 176, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(182, 164, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(132, 255, 210, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 137, 176, 0.05) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+.pattern-dots {
+  background-image: 
+    radial-gradient(circle at 20px 20px, rgba(255, 137, 176, 0.1) 2px, transparent 0),
+    radial-gradient(circle at 40px 40px, rgba(182, 164, 255, 0.1) 2px, transparent 0),
+    radial-gradient(circle at 60px 60px, rgba(132, 255, 210, 0.1) 2px, transparent 0);
+  background-size: 60px 60px;
+}
+
+.pattern-waves {
+  background: 
+    linear-gradient(45deg, rgba(255, 137, 176, 0.03) 25%, transparent 25%) -50px 0,
+    linear-gradient(-45deg, rgba(182, 164, 255, 0.03) 25%, transparent 25%) -50px 0,
+    linear-gradient(45deg, transparent 75%, rgba(132, 255, 210, 0.03) 75%) -50px 0,
+    linear-gradient(-45deg, transparent 75%, rgba(255, 137, 176, 0.03) 75%) -50px 0;
+  background-size: 100px 100px;
+} 
+.pattern-grid {
+  background-image: 
+    linear-gradient(45deg, rgba(255, 137, 176, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(182, 164, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(132, 255, 210, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 137, 176, 0.05) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+.pattern-dots {
+  background-image: 
+    radial-gradient(circle at 20px 20px, rgba(255, 137, 176, 0.1) 2px, transparent 0),
+    radial-gradient(circle at 40px 40px, rgba(182, 164, 255, 0.1) 2px, transparent 0),
+    radial-gradient(circle at 60px 60px, rgba(132, 255, 210, 0.1) 2px, transparent 0);
+  background-size: 60px 60px;
+}
+
+.pattern-waves {
+  background: 
+    linear-gradient(45deg, rgba(255, 137, 176, 0.03) 25%, transparent 25%) -50px 0,
+    linear-gradient(-45deg, rgba(182, 164, 255, 0.03) 25%, transparent 25%) -50px 0,
+    linear-gradient(45deg, transparent 75%, rgba(132, 255, 210, 0.03) 75%) -50px 0,
+    linear-gradient(-45deg, transparent 75%, rgba(255, 137, 176, 0.03) 75%) -50px 0;
+  background-size: 100px 100px;
+} 

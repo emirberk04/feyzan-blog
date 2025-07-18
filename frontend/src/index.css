@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import './styles/patterns.css';
+
+@layer base {
+  body {
+    @apply font-body bg-gradient-to-br from-petal-white via-lavender/30 to-mint-green/40 min-h-screen;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-violet;
+  }
+}
+
+@layer components {
+  .btn-floral {
+    @apply bg-gradient-to-r from-floral-pink to-rose-gold text-white px-6 py-3 rounded-full 
+           shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300
+           hover:from-rose-gold hover:to-floral-pink backdrop-blur-sm;
+  }
+  
+  .card-floral {
+    @apply bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-white/30
+           hover:shadow-xl transition-all duration-300 hover:scale-105 hover:bg-white/90;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-violet via-floral-pink to-butterfly-blue bg-clip-text text-transparent;
+  }
+  
+  .flower-border {
+    @apply border-2 border-floral-pink/50 rounded-lg p-4 relative overflow-hidden backdrop-blur-xs;
+  }
+  
+  .flower-border::before {
+    content: '🌸';
+    @apply absolute top-0 right-0 text-2xl transform translate-x-1 -translate-y-1;
+  }
+  
+  .butterfly-hover {
+    @apply transition-all duration-300 hover:animate-butterfly cursor-pointer;
+  }
+
+  .glass-panel {
+    @apply bg-white/85 backdrop-blur-md border border-white/40 rounded-2xl
+           shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .glass-button {
+    @apply bg-white/70 backdrop-blur-sm border border-white/50 rounded-full px-6 py-2
+           hover:bg-white/90 transition-all duration-300 text-violet hover:text-floral-pink
+           shadow-md hover:shadow-lg transform hover:scale-105;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .glass-effect {
+    @apply bg-white/20 backdrop-blur-md border border-white/30;
+  }
+}
+
+/* Custom animations for flowers and insects */
+.petals-animation {
+  animation: petals-fall 3s linear infinite;
+}
+
+@keyframes petals-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bee-buzz {
+  animation: bee-flight 4s ease-in-out infinite;
+}
+
+@keyframes bee-flight {
+  0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+  25% { transform: translateX(20px) translateY(-10px) rotate(15deg); }
+  50% { transform: translateX(40px) translateY(5px) rotate(-10deg); }
+  75% { transform: translateX(20px) translateY(-5px) rotate(5deg); }
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Smooth scroll behavior */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
